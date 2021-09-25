@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<!--Created by Kareem Zahra - COMP 125 Student ID 301177518 -->
+<html>
+<head>
+    <title>Table</title>
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        form, h1, img {
+            margin: 10px;
+        }
+
+        table {
+            max-width: 500px;
+            margin-bottom: 10px;
+        }
+
+        .table_container {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        h1 {
+            color: #4a4a0a;
+        }
+
+        td {
+            color: #114963;
+        }
+
+        footer {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+            <h1>Assignment 2</h1>
+            <h2>Click here to draw a Table</h2>
+            <form>
+            <label for="numberofrows">Enter the number of rows: </label>
+        <input type="text" name="numberofrows" id="numberofrows" />
+            <label for="numberofcols">Enter the number of columns:</label>
+        <label> <input type="text" name="numberofcols" id="numberofcols" /></label><br>
+        <input name="output" type="button" value="Click here to draw a Table" onclick="createTable();" />
+            </form>
+    <br> <br>
+        <div class="table_container">
+        <div id="result"></div>
+        </div>
+        <footer>
+        <p>Copyright &copy; Kareem Zahra - Student # 301177518</p>
+        </footer>
+        <script src="assignment2.js"></script>
+    </body>
+    </html>
